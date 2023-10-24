@@ -1,0 +1,27 @@
+# Spring Boot Configuration
+
+# DataSource Configuration
+spring:
+  datasource:
+    password: 23101994Lotfi$$$
+    url: jdbc:mysql://localhost:3306/serverdb  # Database URL, in this case, MySQL on localhost and port 3306
+    username: root
+
+  # JPA (Java Persistence API) Configuration
+  jpa:
+    hibernate:
+
+      # Hibernate DDL (Data Definition Language) Auto-generation
+      ddl-auto: create
+
+    properties:
+      hibernate:
+
+        # Hibernate Dialect: Defines the database-specific SQL and settings
+        dialect: org.hibernate.dialect.MySQL8Dialect  # Using MySQL 8 dialect
+
+
+        format_sql: true
+
+
+    show-sql: true
